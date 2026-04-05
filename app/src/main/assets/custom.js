@@ -23,4 +23,14 @@ window.open = function (url, target, features) {
     location.href = url
 }
 
+
+ // 👇 强制安卓竖屏（核心代码）
+  android: {
+    manifestOptions: {
+      activityAttributes: {
+        "android:screenOrientation": "portrait", // 竖屏
+        "android:configChanges": "orientation|screenSize|keyboardHidden"
+      }
+    }
+  }
 document.addEventListener('click', hookClick, { capture: true })
