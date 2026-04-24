@@ -28,8 +28,8 @@ window.open = function (url, target, features) {
   android: {
     manifestOptions: {
       activityAttributes: {
-        "android:screenOrientation": "portrait", // 竖屏
-        "android:configChanges": "orientation|screenSize|keyboardHidden"
+        "android:screenOrientation"; "portrait", // 竖屏
+        "android:configChanges";"orientation|screenSize|keyboardHidden"
       }
     }
   }
